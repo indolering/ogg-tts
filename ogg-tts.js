@@ -19,6 +19,7 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
   */
+
 (function (name, definition){
   if ('function' === typeof define){ // AMD
     define(definition);
@@ -32,7 +33,7 @@
     };
     global[name] = theModule;
   }
-})('GoogleTTS', function () {
+})('oggTTS', function () {
   /**
    * The API instance.
    *
