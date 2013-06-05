@@ -1,11 +1,6 @@
-# Google TTS
+# Ogg TTS
 
-A Javascript API for the Google's text-to-Speech engine and is based on code at http://weston.ruter.net/projects/google-tts/.
-
-**NOTE:** Playback (`.play()` below) will only work when running the script locally as Google's server only
-returns audio if you can prevent the browser from sending the Referrer HTTP Header to their server. If you want to add
-background playback to your online site perhaps [SoundManager](http://www.schillmania.com/projects/soundmanager2/)
-will do the trick (I haven't tested this). On the other hand, I'm assumng this will still work in Phonegap apps.
+A Javascript API and a PHP proxy to convert the MP3s produced by Google's Text To Speech "service" to Firefox compatible OGG files.
 
 ## Features
 
@@ -18,7 +13,7 @@ will do the trick (I haven't tested this). On the other hand, I'm assumng this w
 
 Add the following inside your HTML `<body>` tag, near the bottom:
 
-    <script type="text/javascript" src="https://raw.github.com/hiddentao/google-tts/master/google-tts.min.js"></script>
+    <script type="text/javascript" src="https://raw.github.com/hiddentao/google-tts/master/ogg-tts.min.js"></script>
 
 ## API
 
@@ -26,7 +21,7 @@ Add the following inside your HTML `<body>` tag, near the bottom:
 
 Initialize a new instance of the library, e.g:
 
-    var tts = new GoogleTTS('zh-CN');
+    var tts = new oggTTS('zh-CN');
 
 **Params:**
 
@@ -79,12 +74,17 @@ Checkout the code and double-click `index.html`.
 
 ## License
 
-(The MIT License)
+ Copyright (C) 2013  Zachary Lym
 
-Copyright (c) 2012 Ramesh Nair &lt;www.hiddentao.com&gt;
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
